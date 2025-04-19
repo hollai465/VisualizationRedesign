@@ -212,5 +212,5 @@ def update_visuals(clickData,search_value):
     return line_fig, table_content, debug_data
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=True, host='0.0.0.0', port=8080)
 
