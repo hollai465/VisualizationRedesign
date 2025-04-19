@@ -30,6 +30,7 @@ df_temp = df.copy()
 df_temp["people"] = df_temp["people"].fillna(average_people)
 
 app = dash.Dash(__name__)
+server = app.server
 
 display_name_map = {
     "Project name": "Name",
